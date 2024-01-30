@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8 ">
+        <title>Bmi 
+        </title>
+        <script>
+                function validateLogin() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+      if (username === "DharuiBmi"&& password === "Dharui1979") {
+
+        alert("Login successful!");
+        window.location.href = "home2.html";
+      }
+      else { 
+        alert("Invalid username or password. Please try again.");
+      }
+   
+      }
+        </script>
+        <style>
+            body{
+                margin: 0 ; 
+                padding :0;
+            
+            }
+            .Username {
+
+                
+                position :absolute ;
+                top : 50% ;
+                left : 50% ; 
+                transform : Translate(-50%,50%);
+                
+            }
+            .h1,h2 {
+                position :absolute ;
+                top : 40%;
+                left : 50%; 
+                transform : Translate(-50%,50%);
+            }
+          .Image {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 65vh;
+        }
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;}
+        
+        </style>
+        <div class="Image">
+            <img  Src="download.png" alt> 
+            </div>
+
+
+    </head>
+    <body background="images.jpg">
+
+        
+        <div Class="h1 , h2 , h3">
+            <h1 style = "font-family:Verdana">
+                Welcome to Bahrain Mobility Internatioanl
+
+            </h1>
+            <h2>
+                Enter Your Username & Password 
+            </h2>
+            
+        </div>
+
+        <div class="Username">
+
+        <form>
+
+            <label for="username">Username:</label>
+
+            <input type="text" id="username" name="username" required><br><br>
+
+            <label for="password">Password:</label>
+
+            <input type="password" id="password" name="password" required><br><br>
+
+            <input type="button" name ="Submit" value="Login" onclick="validateLogin()">
+
+            <input type ="reset" name ="Reset"/>
+
+          </form>
+           </div>
+       </form>
+    </body>
+</html>
